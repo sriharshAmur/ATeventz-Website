@@ -1,0 +1,88 @@
+#home {
+    height: 90vh;
+    /* border-bottom: 3px solid black; */
+    /* background-color: #0089D7; */
+    /* background-color: #FF8179; */
+    /* background-color: #FF7971 ; */
+    /* visibility: hidden; */
+}
+
+span:before {
+    content: '';
+    animation: animate infinite 8s;
+}
+
+@keyframes animate {
+    0% {
+        content: 'Poker';
+    }
+    20% {
+        content: 'Basketball';
+    }
+    40% {
+        content: 'BBQ'
+    }
+    60% {
+        content: 'Open Mic'
+    }
+    80% {
+        content: 'Football';
+    }
+    100% {
+        content: "Beer Pong";
+    }
+}
+
+.content_container {
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: cornflowerblue; */
+    padding: 50px;
+    margin: 5vh auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    /* background-color: #0BC8F1; */
+    /* background-color: #FF7971; */
+    /* background-color: gold; */
+    border-radius: 10px;
+    /* color: white; */
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content_title {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* .content_text{
+
+}
+
+.content_cta {
+    align-self: center; 
+} */
+
+.content_cta button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 30px;
+    /* background-color: #FF7971; */
+    border-width: 1px;
+    color: black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+
+.phoneFrame img{
+    width: 80%;
+}

@@ -1,0 +1,64 @@
+#about {
+    min-height: 90vh;
+    margin-top: 40px;
+    border-bottom: 3px solid black;
+    padding-bottom: 40px;
+
+}
+
+#about h1 {
+    text-align: center;
+    margin-bottom : 20px;
+}
+.person {
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    width: fit-content;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.person:nth-child(odd) {
+    flex-direction: row-reverse;
+    text-align: right;
+
+}
+
+.person .media {
+
+}
+
+.person .profile_picture{
+    margin: 20px;
+}
+
+.person .social_links {
+    text-align: center;
+}
+
+.person .social_links a{
+    margin: 5px 10px;
+}
+
+.person .profile_picture img{
+    width: 150px;
+}
+
+.person .social_links img{
+    width: 30px;
+}
+
+.person .description {
+    margin-top: 40px;
+}
+
+.person .description h5{
+    color: grey;
+
+margin: 5px 0 20px 0;}
