@@ -1,12 +1,12 @@
 #progress {
     min-height: 90vh;
-    margin-top: 40px;
-    border-bottom: 3px solid black;
+    padding-top: 40px;
+    /* border-bottom: 3px solid black; */
 }
 
 #progress h1{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 7vh;
 }
 
 img{
@@ -20,7 +20,7 @@ img{
     text-align: center;
     width: 70%;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     gap: 30px;
     align-items: center;
@@ -29,12 +29,11 @@ img{
 
 #progress .description img {
     width: 200px;
-    
 }
 
 #progress .description .image {
     padding: 30px;
-    border-left: 3px solid black;
+    /* border-left: 3px solid black; */
 }
 
 #progress .description .text > p{
@@ -45,7 +44,10 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    margin-bottom: 5vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 0;
+    border-radius: 30px;
 }
 
 .stage {
@@ -57,10 +59,12 @@ img{
     cursor: pointer;
 
 }
+.stage-active .circle {
+    border: 3px solid black;
+}
 
 .stage:hover .circle{
     border: 3px solid black;
-    
 }
 
 .ideation{

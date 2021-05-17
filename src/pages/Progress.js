@@ -32,6 +32,8 @@ const Progress = () => {
     const [description, setDescription] = useState(content['ideation']);
 
 
+
+
     const setContent = (stage) => {
         setDescription(content[stage]);
     }
@@ -42,7 +44,7 @@ const Progress = () => {
             <div className="container">
                 <h1>Progress</h1>
                 <div className="progress_bar">
-                    <div className="ideation stage" onClick={() => setContent('ideation')}>
+                    <div className={`ideation stage`} onClick={() => setContent('ideation')}>
                         <div className="shape">
                             <div className="circle filled"></div>
                             <div className="line filled"></div>
@@ -83,7 +85,9 @@ const Progress = () => {
                 </div>
 
                 <div className="description">
-                    
+                    <div className="image">
+                        <img src={description.src} alt="" />
+                    </div>
 
                     <div className="text">
                         <h3>{description.title}</h3>
@@ -91,9 +95,7 @@ const Progress = () => {
 
                     </div>
 
-                    <div className="image">
-                        <img src={description.src} alt="" />
-                    </div>
+
 
                 </div>
             </div>

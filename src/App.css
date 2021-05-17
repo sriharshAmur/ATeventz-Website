@@ -8,10 +8,11 @@
 .container{
   width: 60%;
   margin: auto;
+  /* height: 100%; */
   
 }
 
-.App {
-  /* background-color: #FF7971 ; */
-}
+/* .App {
+  background-color: #FF7971 ;
+} */
 
