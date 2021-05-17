@@ -16,9 +16,9 @@ const About = () => {
                             <img src={Sriharsh} alt="" />
                         </div>
                         <div className="social_links">
-                            <a href="#"><img src={Linkedin} alt="" /></a>
-                            <a href="#"><img src={Instagram} alt="" /></a>
-                            <a href="#"><img src={Github} alt="" /></a>
+                            <a href="/#"><img src={Linkedin} alt="" /></a>
+                            <a href="/#"><img src={Instagram} alt="" /></a>
+                            <a href="/#"><img src={Github} alt="" /></a>
                         </div>
                     </div>
                     <div className="description">
@@ -35,9 +35,9 @@ const About = () => {
                             <img src={Sriharsh} alt="" />
                         </div>
                         <div className="social_links">
-                            <a href="#"><img src={Linkedin} alt="" /></a>
-                            <a href="#"><img src={Instagram} alt="" /></a>
-                            <a href="#"><img src={Github} alt="" /></a>
+                            <a href="/#"><img src={Linkedin} alt="" /></a>
+                            <a href="/#"><img src={Instagram} alt="" /></a>
+                            <a href="/#"><img src={Github} alt="" /></a>
                         </div>
                     </div>
                     <div className="description">
@@ -53,9 +53,9 @@ const About = () => {
                             <img src={Sriharsh} alt="" />
                         </div>
                         <div className="social_links">
-                            <a href="#"><img src={Linkedin} alt="" /></a>
-                            <a href="#"><img src={Instagram} alt="" /></a>
-                            <a href="#"><img src={Github} alt="" /></a>
+                            <a href="/#"><img src={Linkedin} alt="" /></a>
+                            <a href="/#"><img src={Instagram} alt="" /></a>
+                            <a href="/#"><img src={Github} alt="" /></a>
                         </div>
                     </div>
                     <div className="description">

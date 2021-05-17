@@ -1,6 +1,5 @@
 // eslint-disable-next-line
 import React from 'react';
-// import {Link} from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 import './NavBar.css'

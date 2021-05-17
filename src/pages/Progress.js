@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Half from '../images/half_filled.svg';
 import prototype from '../images/prototype.svg';
 import ideation from '../images/ideation.svg';
 import launch from '../images/launch.svg';
@@ -65,7 +64,6 @@ const Progress = () => {
                     <div className="development stage" onClick={() => setContent('mvp')}>
                         <div className="shape">
                             <div className="line filled"></div>
-                            {/* <img src={Half} alt="" /> */}
                             <div className="circle "></div>
                             <div className="line"></div>
                         </div>
