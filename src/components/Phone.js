@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-
 import Poker from '../images/Poker.svg'
 import Cook from '../images/Cook.svg'
 import Football from '../images/Football.svg'
@@ -8,7 +7,6 @@ import Basketball from '../images/Basketball.svg'
 import BeerPong from '../images/BeerPong.svg'
 import Party from '../images/Party.svg'
 
-import 'react-slideshow-image/dist/styles.css'
 import './Phone.css'
 
 
@@ -23,14 +21,7 @@ const Phone = () => {
     const [property, setProperty] = useState('card-right')
     const [image, setImage] = useState(slideImage[currentImage]);
 
-    const prop = {
-        duration: 5000,
-        transitionDuration: 500,
-        infinite: true,
-        indicators: true,
-        scale: 0.4,
-        arrows: true
-    }
+
 
 
 

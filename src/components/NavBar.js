@@ -24,7 +24,7 @@ const NavBar = () => {
         return () => {
             document.removeEventListener("scroll", listener)
         }
-    }, [scrollState]);
+    }, []);
 
     return (
         <div className={navBar ? 'navContainer' : "navContainer scroll"}>
