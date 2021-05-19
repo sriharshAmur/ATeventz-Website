@@ -1,19 +1,40 @@
 // eslint-disable-next-line
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
 import './NavBar.css'
 
+
+
 const NavBar = () => {
+    const [navBar, setNavBar] = useState(false);
+
+    let listener = null
+    const [scrollState, setScrollState] = useState("top")
+
+    useEffect(() => {
+        listener = document.addEventListener("scroll", e => {
+            var scrolled = document.scrollingElement.scrollTop
+            if (scrolled >= 80) {
+                setNavBar(true);
+            } else {
+                setNavBar(false);
+            }
+        })
+        return () => {
+            document.removeEventListener("scroll", listener)
+        }
+    }, [scrollState]);
+
     return (
-        <div className="navContainer">
+        <div className={navBar ? 'navContainer' : "navContainer scroll"}>
             <nav>
                 <div className="logo">
-                    ATeventz
+                    AtEventz
                 </div>
                 <div className="navlinks">
                     <ul>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             {/* <Link to="/">Home</Link> */}
                             <Link
                                 activeClass="active"
@@ -24,7 +45,7 @@ const NavBar = () => {
                                 duration={500}
                             >Home</Link>
                         </li>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             {/* <Link to="/app">App</Link> */}
                             <Link
                                 activeClass="active"
@@ -35,7 +56,7 @@ const NavBar = () => {
                                 duration={500}
                             >App</Link>
                         </li>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             <Link
                                 activeClass="active"
                                 to="about"
@@ -45,7 +66,7 @@ const NavBar = () => {
                                 duration={500}
                             >About</Link>
                         </li>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             <Link
                                 activeClass="active"
                                 to="progress"
@@ -55,7 +76,7 @@ const NavBar = () => {
                                 duration={500}
                             >Progress</Link>
                         </li>
-                        <li class="nav-link">
+                        <li className="nav-link">
                             <Link
                                 activeClass="active"
                                 to="contact"

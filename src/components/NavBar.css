@@ -1,14 +1,18 @@
 .navContainer {
     width: 100%;
-    height: 11vh;
-    position: sticky;
+    /* height: 11vh; */
+    position: fixed;
     top: 0;
     /* margin-top: -10px; */
     padding-top: 10px;
     /* margin-bottom: 20px; */
-    border-bottom: 1px solid black;
     background-color: white;
+    color: black;
+    
+    z-index: 10;
 }
+
+
 
 nav {
     display: flex;
@@ -62,6 +66,22 @@ nav {
     font-size: 1.2rem;
     font-weight: 600;
     border-radius: 30px;
-    /* background-color: #FF7971; */
+    background-color: transparent;
+    color: black;
+}
+
+.scroll {
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: white
+
+}
+
+.scroll .nav-link {
+    color: white;
+}
+
+.scroll .cta button {
+    color: white;
 }
 

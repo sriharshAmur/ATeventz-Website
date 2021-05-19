@@ -6,7 +6,7 @@ import Party from '../images/party.png';
 const Application = () => {
     return (
         <div id="application" >
-            <div className="container">
+            <div className="container ">
                 <div className="grid-container">
                     
                     <h1>Features</h1>
@@ -16,7 +16,7 @@ const Application = () => {
                                 <img src={FindEvents} alt="" />
                             </div>
                             <div className="text">
-                                <h2>Find Events Near You</h2>
+                                <h3>Find Events Near You</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, praesentium!</p>
                             </div>
 
@@ -27,7 +27,7 @@ const Application = () => {
                                 <img src={Party} alt="" />
                             </div>
                             <div className="text">
-                                <h2>Host Events You Love</h2>
+                                <h3>Host Events You Love</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, praesentium!</p>
                             </div>
 

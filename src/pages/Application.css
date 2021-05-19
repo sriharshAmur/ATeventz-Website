@@ -1,41 +1,43 @@
 #application {
-  padding-top: 40px;
-  min-height: 90vh;
-
-  
+  padding-top: 4vh;
+  margin-bottom: 10vh;
+  /* min-height: 70vh; */
   /* border-bottom: 3px solid black; */
   /* color: white */
+  /* background-color: aliceblue; */
 }
 
 
 #application  h1 {
   text-align: center;
-  margin-bottom: 10vh;
+  padding-bottom: 5vh;
   /* margin-top: 20px; */
 }
 
 .grid-container {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-
+  /* padding: 30px; */
+  /* padding: 10vh 0; */
 }
+
 
 
 .features_container {
   width: 100%;
   display: flex;
-  gap: 30px;
+  gap: 5vw;
   justify-content: center;
   align-items: center;
   height: 100%;
   place-self: center;
   justify-self: center;
+  /* flex-wrap: wrap; */
 
 }
 
 .feature {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,25 +47,37 @@
   padding: 30px 20px;
   border-radius: 30px;
   text-align: center;
+  /* background-color: aliceblue; */
 }
 
-.feature .text h2{
+.feature .text{
+  /* background-color: gold; */
+  margin: auto;
+  /* width: 70%; */
+}
+
+.feature .text h3{
   margin: 10px auto;
   text-align: center;
   /* background-color: aliceblue; */
 
 }
 
+
+.feature p {
+  text-align: center;
+  /* background-color: aliceblue;*/
+} 
+
+
 .feature .image {
-  flex: 1;
+  /* flex: 1; */
   text-align: center;
   /* width: 100%; */
+  /* background-color: gold; */
 }
 
 .feature img {
-  width: 20vh;
-}
-
-.feature p {
-  margin-left: 30px;
+  width: 15vh;
+  margin-bottom: 20px;
 }
