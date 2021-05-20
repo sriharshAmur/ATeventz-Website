@@ -10,7 +10,6 @@ const NavBar = () => {
     const [navBar, setNavBar] = useState(false);
 
     let listener = null
-    const [scrollState, setScrollState] = useState("top")
 
     useEffect(() => {
         listener = document.addEventListener("scroll", e => {

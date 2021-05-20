@@ -20,33 +20,23 @@ const Phone = () => {
     // const property = ['card-right', 'card-left'];
     const [property, setProperty] = useState('card-right')
     const [image, setImage] = useState(slideImage[currentImage]);
-
-
-
-
-
-    const switchImage = () => {
-        // changeProperty(property);
-        if (currentImage < 6) {
-            currentImage = currentImage + 1;
-            setImage(slideImage[currentImage]);
-        } else {
-            currentImage = 0;
-            setImage(slideImage[currentImage]);
-        }
-        if (currentImage % 2 === 0) {
-            setProperty('card-right');
-        }
-        else {
-            setProperty('card-left');
-        }
-        return currentImage;
-    }
-
+    
     useEffect(() => {
         const interval = setInterval(() => {
-            
-            switchImage();
+            if (currentImage < 6) {
+                currentImage = currentImage + 1;
+                setImage(slideImage[currentImage]);
+            } else {
+                currentImage = 0;
+                setImage(slideImage[currentImage]);
+            }
+            if (currentImage % 2 === 0) {
+                setProperty('card-right');
+            }
+            else {
+                setProperty('card-left');
+            }
+            return currentImage;
         }, 2700);
         return () => clearInterval(interval);
     }, []);
@@ -54,7 +44,7 @@ const Phone = () => {
     return (
         <div id="Phone">
             <div className="card-contain">
-                <img src={image} alt="" className= {property} />
+                <img src={image} alt="" className={property} />
             </div>
 
             {/* <video playsInline autoPlay muted loop >
