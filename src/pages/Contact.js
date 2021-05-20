@@ -7,7 +7,7 @@ const Contact = () => {
             <h1>Contact Us</h1>
             <div className="container">
                 <div className="contact-container">
-                    <form action="" name="contact">
+                    <form  name="contact">
                     <input type="hidden" name="form-name" value="contact" />
                         <div className="input-container">
                             <label htmlFor="name" >Name: </label>
@@ -24,7 +24,7 @@ const Contact = () => {
                             <textarea type="text" name="message" placeholder="" />
                         </div>
 
-                        <button type="submit">Send</button>
+                        <button >Send</button>
                     </form>
 
                 
