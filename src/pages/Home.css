@@ -21,12 +21,11 @@ video {
   align-items: center;
   color: white;
   /* opacity: 0.5; */
-  padding: 50px;
-  margin: 20px auto;
+  padding: 20px 50px;
+  margin: 50px auto 20px auto;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 10px;
-  margin-top: 10vh;
-
+  margin-top: 12vh;
   background: rgba(255, 255, 255, 0.35);
   /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
   backdrop-filter: blur(10px);
@@ -39,20 +38,47 @@ video {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  font-family: "mont-regular";
 }
 
 .content_title {
   font-size: 2rem;
   font-weight: 800;
+  font-family: "mont-bold";
+}
+
+.content_cta {
+  display: flex;
+  flex-direction: column;
+}
+
+.content_cta input {
+  padding: 10px 20px;
+  width: 20vw;
+  height: 50px;
+  border-radius: 10px;
+  border: 0;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "mont-regular";
+}
+
+.content_cta input:focus {
+  border: 0;
+  outline: none;
 }
 
 .content_cta button {
+  display: block;
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: 600;
-  border-radius: 30px;
+  width: 20vw;
+  font-family: "mont-bold";
+  border-radius: 10px;
   /* background-color: #FF7971; */
-  border-width: 1px;
+  /* border-width: 1px; */
   color: black;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

@@ -22,9 +22,10 @@ const Home = () => {
                         <div className="content_text">
                             Get an exclusive link in your inbox when the app is up
                 </div>
-                        <div className="content_cta">
-                            <button>Sign Me Up</button>
-                        </div>
+                        <form name="subscribe" method="POST" className="content_cta" netlify>
+                            <input type="email" name="email" placeholder="Enter your email"/>
+                            <button type="submit"> Sign Me Up</button>
+                        </form>
                     </div>
                     <div className="phoneFrame">
                         <Phone></Phone>

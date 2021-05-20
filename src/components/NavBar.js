@@ -8,22 +8,22 @@ import './NavBar.css'
 
 const NavBar = () => {
     const [navBar, setNavBar] = useState(false);
+    const [listener, setListener] = useState(null)
 
-    let listener = null
 
     useEffect(() => {
-        listener = document.addEventListener("scroll", e => {
+        setListener(document.addEventListener("scroll", e => {
             var scrolled = document.scrollingElement.scrollTop
             if (scrolled >= 80) {
                 setNavBar(true);
             } else {
                 setNavBar(false);
             }
-        })
+        }));
         return () => {
             document.removeEventListener("scroll", listener)
         }
-    }, []);
+    }, [listener]);
 
     return (
         <div className={navBar ? 'navContainer' : "navContainer scroll"}>

@@ -6,6 +6,32 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: 'mont-regular', 'Courier New',
     monospace;
+}
+
+
+@font-face {
+  font-family: 'mont-regular';
+  src: url('../src/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'mont-bold';
+  src: url('../src//fonts/Montserrat/Montserrat-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'mont-semibold';
+  src: url('../src/fonts/Montserrat/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'mont-extraBold';
+  src: url('/src/fonts/Montserrat/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'mont-light';
+  src: url('./fonts/Montserrat/Montserrat-Light.ttf');
 }
