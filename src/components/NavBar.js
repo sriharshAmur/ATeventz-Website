@@ -1,6 +1,7 @@
 // eslint-disable-next-line
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
+import {FaBars} from  'react-icons/fa';
 
 import './NavBar.css'
 
@@ -14,7 +15,7 @@ const NavBar = () => {
     useEffect(() => {
         setListener(document.addEventListener("scroll", e => {
             var scrolled = document.scrollingElement.scrollTop
-            if (scrolled >= 80) {
+            if (scrolled >= 10) {
                 setNavBar(true);
             } else {
                 setNavBar(false);
@@ -27,10 +28,11 @@ const NavBar = () => {
 
     return (
         <div className={navBar ? 'navContainer' : "navContainer scroll"}>
-            <nav>
+            <nav >
                 <div className="logo">
                     AtEventz
                 </div>
+                <FaBars className="menu" />
                 <div className="navlinks">
                     <ul>
                         <li className="nav-link">
@@ -65,7 +67,7 @@ const NavBar = () => {
                                 duration={500}
                             >About</Link>
                         </li>
-                        <li className="nav-link">
+                        {/* <li className="nav-link">
                             <Link
                                 activeClass="active"
                                 to="progress"
@@ -74,7 +76,7 @@ const NavBar = () => {
                                 offset={-70}
                                 duration={500}
                             >Progress</Link>
-                        </li>
+                        </li> */}
                         <li className="nav-link">
                             <Link
                                 activeClass="active"

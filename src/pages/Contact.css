@@ -40,7 +40,7 @@
   height: 100px;
 }
 
-#contact .container  form button {
+#contact .container form button {
   padding: 10px 50px;
   font-size: 1.2rem;
   font-weight: 600;
@@ -49,4 +49,15 @@
   color: black;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .input-container {
+    flex-direction: column;
+    text-align: left;
+  }
+
+.input-container label {
+margin-left: 0;
+}
 }

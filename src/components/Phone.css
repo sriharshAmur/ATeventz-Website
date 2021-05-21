@@ -4,10 +4,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 325px;
-  height: 607px;
+  width: 282px;
+  height: 526px;
   display: grid;
   place-items: center;
+  padding: 10px;
 }
 
 /* #Phone video {
@@ -27,26 +28,18 @@
   margin-top: 30px;
   /* background-color: wheat; */
   padding: 0;
-  width: 90%;
   position: relative;
   /* top: -250px; */
   /* left: 13px; */
-  height: 500px;
+  height: 400px;
   width: 305px;
+  width: 90%;
 }
 
 .card-image {
   /* overflow: hidden; */
   position: absolute;
 }
-
-/* .card-right {
-  animation: swipe-right infinite 3s;
-}
-
-.card-left {
-  animation: swipe-left infinite 3s;
-} */
 
 .animation-left {
   animation: swipe-left 2s;
@@ -109,5 +102,31 @@
   100% {
     transform: translateX(-500px) rotate(-45deg);
     opacity: 0.5;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #Phone {
+    background-image: url("../images/phoneFrameMini.svg");
+    width: 212px;
+    height: 395px;
+  }
+
+  .card-contain {
+    margin-top: 0px;
+    /* background-color: aliceblue; */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #Phone {
+    background-image: url("../images/phoneFrameMicro.svg");
+    width: 164px;
+    height: 305px;
+  }
+
+  .card-contain {
+    height: 100%;
+    margin-top: 10px;
   }
 }

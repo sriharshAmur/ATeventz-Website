@@ -16,6 +16,7 @@ video {
 
 .content_container {
   display: flex;
+  gap: 20px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -70,7 +71,6 @@ video {
 }
 
 .content_cta button {
-  display: block;
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: 600;
@@ -81,10 +81,6 @@ video {
   /* border-width: 1px; */
   color: black;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.phoneFrame img {
-  /* width: 80%; */
 }
 
 span:before {
@@ -111,4 +107,107 @@ span:before {
   100% {
     content: "Beer Pong";
   }
+}
+
+
+@media screen and  (max-width: 800px) {
+
+  .content_container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .phoneFrame {
+    order: 1;
+  }
+
+  .change{
+    display: inline-block;
+  }
+
+  .content {
+    order: 2;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .content_title {
+    font-size: 1.5rem;
+  }
+
+  .content_cta {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  }
+
+  
+.content_cta input {
+  width: 30vw;
+  margin-bottom: 0px;
+
+}
+.content_cta button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 30vw;
+  font-family: "mont-bold";
+  border-radius: 10px;
+  /* background-color: #FF7971; */
+  /* border-width: 1px; */
+  color: black;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+  
+
+}
+
+@media screen and  (max-width: 600px) {
+
+  .change{
+    display: block;
+  }
+
+  .content_container {
+    padding: 10px 5px;
+    margin-top: 10vh;
+  }
+
+  .content_title {
+    font-size: 1.5rem;
+  }
+
+  .content_text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .content_cta {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+    
+  .content_cta input {
+    width: 80%;
+    margin-bottom: 0px;
+  
+  }
+  .content_cta button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 80%;
+    font-family: "mont-bold";
+    border-radius: 10px;
+    /* background-color: #FF7971; */
+    /* border-width: 1px; */
+    color: black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+
 }

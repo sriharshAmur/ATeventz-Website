@@ -20,7 +20,7 @@ const App = () => {
           <Home />
           <Application />
           <About />
-          <Progress />
+          {/* <Progress /> */}
           <Contact />
         {/* <Switch>
           <Route exact path="/" component={Home} />

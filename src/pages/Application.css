@@ -1,14 +1,9 @@
 #application {
   padding-top: 4vh;
   margin-bottom: 10vh;
-  /* min-height: 70vh; */
-  /* border-bottom: 3px solid black; */
-  /* color: white */
-  /* background-color: aliceblue; */
 }
 
-
-#application  h1 {
+#application h1 {
   text-align: center;
   padding-bottom: 5vh;
   /* margin-top: 20px; */
@@ -21,8 +16,6 @@
   /* padding: 10vh 0; */
 }
 
-
-
 .features_container {
   width: 100%;
   display: flex;
@@ -33,7 +26,6 @@
   place-self: center;
   justify-self: center;
   /* flex-wrap: wrap; */
-
 }
 
 .feature {
@@ -50,25 +42,22 @@
   /* background-color: aliceblue; */
 }
 
-.feature .text{
+.feature .text {
   /* background-color: gold; */
   margin: auto;
   /* width: 70%; */
 }
 
-.feature .text h3{
+.feature .text h3 {
   margin: 10px auto;
   text-align: center;
   /* background-color: aliceblue; */
-
 }
-
 
 .feature p {
   text-align: center;
   /* background-color: aliceblue;*/
-} 
-
+}
 
 .feature .image {
   /* flex: 1; */
@@ -80,4 +69,10 @@
 .feature img {
   width: 15vh;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .features_container {
+    flex-direction: column;
+  }
 }

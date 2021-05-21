@@ -14,15 +14,14 @@ const Home = () => {
                 </video>
 
                 <div className="content_container">
-
                     <div className="content">
                         <div className="content_title">
-                            Find <span>  </span> <br /> Events Near You
-                </div>
+                            <div className="change"> Find <span>  </span> </div>  Events Near You
+                        </div>
                         <div className="content_text">
                             Get an exclusive link in your inbox when the app is up
-                </div>
-                        <form name="subscribe"  className="content_cta" data-netlify="true">
+                        </div>
+                        <form name="subscribe" className="content_cta" data-netlify="true">
                             <input type="hidden" name="form-name" value="subscribe" />
                             <input type="email" name="email" placeholder="Enter your email" />
                             <button type="submit"> Sign Me Up</button>
