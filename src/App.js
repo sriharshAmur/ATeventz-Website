@@ -6,7 +6,7 @@ import NavBar from './components/NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import Application from './pages/Application';
-import Progress from './pages/Progress';
+// import Progress from './pages/Progress';
 import Contact from './pages/Contact';
 
 
