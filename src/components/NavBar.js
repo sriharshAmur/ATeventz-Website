@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import {FaBars} from  'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 import './NavBar.css'
 
@@ -26,15 +26,51 @@ const NavBar = () => {
         }
     }, [listener]);
 
+    const handleMenuClick = (e) => {
+        var nav = document.querySelector(".navlinks");
+        var cross = document.querySelector(".cross");
+        nav.style.display = "grid";
+        nav.classList.add("overlay");
+        nav.classList.remove("navlinks");
+
+        cross.classList.remove("cross");
+        cross.style.display = "fixed";
+        cross.classList.add("cross-show");
+
+        nav.addEventListener("click", () => {
+            nav.style.display = "none";
+            nav.classList.add("navlinks");
+            nav.classList.remove("overlay");
+
+            cross.classList.remove("cross-show");
+            cross.classList.add("cross");
+        })
+    }
+
+    const handleCrossClick = () => {
+        var nav = document.querySelector(".overlay");
+        var cross = document.querySelector(".cross-show");
+
+        nav.style.display = "none";
+        nav.classList.add("navlinks");
+        nav.classList.remove("overlay");
+
+        cross.classList.remove("cross-show");
+        cross.classList.add("cross");
+    }
+
+
     return (
         <div className={navBar ? 'navContainer' : "navContainer scroll"}>
             <nav >
                 <div className="logo">
                     AtEventz
                 </div>
-                <FaBars className="menu" />
+                <FaBars className="menu" onClick={handleMenuClick} />
+                <FaTimes className="cross" onClick={handleCrossClick} />
                 <div className="navlinks">
                     <ul>
+
                         <li className="nav-link">
                             {/* <Link to="/">Home</Link> */}
                             <Link

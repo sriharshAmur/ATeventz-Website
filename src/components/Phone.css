@@ -6,9 +6,11 @@
   background-size: cover;
   width: 282px;
   height: 526px;
+  /* width: 325;
+  height: 607; */
   display: grid;
   place-items: center;
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 /* #Phone video {
@@ -29,16 +31,18 @@
   /* background-color: wheat; */
   padding: 0;
   position: relative;
-  /* top: -250px; */
-  /* left: 13px; */
-  height: 400px;
-  width: 305px;
-  width: 90%;
+  /* top: -250px;
+  left: 13px; */
+  /* height: 400px;
+  width: 305px; */
+  width: 100%;
+  height: 100%;
 }
 
 .card-image {
-  /* overflow: hidden; */
   position: absolute;
+  height: 413px;
+  width: 220px;
 }
 
 .animation-left {
@@ -49,29 +53,6 @@
   animation: swipe-right 2s;
 }
 
-/* .poker {
-  animation: swipe-left infinite 3s;
-  animation-delay: 3s;
-}
-
-.party {
-  animation: swipe-right 3s;
-}
-
-.football {
-  animation: swipe-left infinite 3s;
-  animation-delay: 7s;
-}
-
-.beerpong {
-  animation: swipe-right infinite 3s;
-  animation-delay: 4s;
-}
-
-.basketball {
-  animation: swipe-left infinite 3s;
-  animation-delay: 0s;
-} */
 
 .hidden {
   visibility: hidden;
@@ -110,11 +91,20 @@
     background-image: url("../images/phoneFrameMini.svg");
     width: 212px;
     height: 395px;
+    /* width: 282;
+    height: 526; */
   }
 
   .card-contain {
-    margin-top: 0px;
+    margin-top: 20px;
     /* background-color: aliceblue; */
+    
+  }
+
+  .card-image {
+    width: 165px;
+    height: 310px;
+    /* display: none; */
   }
 }
 
@@ -129,4 +119,36 @@
     height: 100%;
     margin-top: 10px;
   }
+
+  .card-image {
+    width: 125px;
+    height: 237px;
+  }
 }
+
+
+
+
+/* .poker {
+  animation: swipe-left infinite 3s;
+  animation-delay: 3s;
+}
+
+.party {
+  animation: swipe-right 3s;
+}
+
+.football {
+  animation: swipe-left infinite 3s;
+  animation-delay: 7s;
+}
+
+.beerpong {
+  animation: swipe-right infinite 3s;
+  animation-delay: 4s;
+}
+
+.basketball {
+  animation: swipe-left infinite 3s;
+  animation-delay: 0s;
+} */

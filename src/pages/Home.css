@@ -55,7 +55,8 @@ video {
 
 .content_cta input {
   padding: 10px 20px;
-  width: 20vw;
+  width: 25vw;
+  max-width: 300px;
   height: 50px;
   border-radius: 10px;
   border: 0;
@@ -74,13 +75,21 @@ video {
   padding: 10px 20px;
   font-size: 1.2rem;
   font-weight: 600;
-  width: 20vw;
+  width: 25vw;
+  max-width: 300px;
   font-family: "mont-bold";
   border-radius: 10px;
   /* background-color: #FF7971; */
   /* border-width: 1px; */
   color: black;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.content_cta button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: black;
 }
 
 span:before {
