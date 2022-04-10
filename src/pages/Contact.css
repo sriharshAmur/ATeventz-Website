@@ -1,76 +1,84 @@
 #contact {
-  padding-bottom: 2vh;
-  padding-top: 5vh;
+    padding-bottom: 2vh;
+    padding-top: 5vh;
+    margin-bottom: 20vh;
 }
 
 #contact h1 {
-  text-align: center;
-  margin-bottom: 3vh;
+    text-align: center;
+    margin-bottom: 3vh;
+    font-family: 'mont-bold';
 }
 
 #contact form {
-  /* background-color: violet; */
-  padding: 30px;
-  text-align: center;
+    /* background-color: violet; */
+    padding: 30px;
+    text-align: center;
 }
 
 .input-container {
-  padding: 15px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* flex-direction: column; */
-  text-align: left;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+    text-align: left;
 }
 
 .input-container label {
-  margin-bottom: 10px;
-  font-family: "mont-bold";
-  font-size: 1.2rem;
-  width: 200px;
+    margin-bottom: 10px;
+    font-family: 'mont-bold';
+    font-size: 1.2rem;
+    width: 200px;
 }
 
 .input-container input {
-  width: 50%;
-  padding: 10px 10px;
+    font-family: 'mont-regular';
+    width: 50%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-radius: 10px;
 }
 
 .input-container textarea {
-  width: 50%;
-  height: 100px;
+    font-family: 'mont-regular';
+    border-radius: 10px;
+    width: 50%;
+    height: 100px;
+    padding: 10px 10px;
 }
 
 #contact .container form button {
-  padding: 10px 50px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  font-family: "mont-bold";
-  border-radius: 10px;
-  color: black;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-top: 20px;
+    padding: 10px 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: 'mont-bold';
+    border-radius: 10px;
+    color: black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 20px;
 }
 
-
 #contact .container form button:hover {
-  cursor: pointer;
-  color: white;
-  background-color: black;
+    cursor: pointer;
+    color: white;
+    background-color: black;
 }
 
 @media screen and (max-width: 600px) {
-  .input-container {
-    flex-direction: column;
-    justify-content: end;
-    align-items: flex-start;
-    text-align: left;
-  }
+    .input-container {
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-start;
+        text-align: left;
+    }
 
-.input-container label {
-margin-left: 0;
-}
+    .input-container label {
+        margin-left: 0;
+    }
 
-.input-container input, .input-container textarea {
-  width: 80%;
-}
+    .input-container input,
+    .input-container textarea {
+        width: 80%;
+    }
 }

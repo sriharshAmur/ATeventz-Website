@@ -1,32 +1,41 @@
 #about {
-  /* min-height: 90vh; */
-  margin-bottom: 10vh;
-  padding-top: 5vh;
+    /* min-height: 90vh; */
+    margin-bottom: 10vh;
+    padding-top: 5vh;
 }
 
 #about h1 {
-  text-align: center;
-  margin-bottom: 5vh;
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: 'mont-bold';
+}
+
+.description h3 {
+    font-family: 'mont-semibold';
+}
+
+.description h3 {
+    font-family: 'mont-regular';
 }
 
 .person-container {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 .person {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: 10px;
-  align-items: center;
-  /* border: 1px solid black; */
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  border-radius: 30px;
-  padding: 30px;
-  text-align: center;
-  min-width: 250px;
-  box-sizing: border-box;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 30px;
+    padding: 30px;
+    text-align: center;
+    min-width: 250px;
+    box-sizing: border-box;
 }
 
 /* .person .media {
@@ -34,39 +43,38 @@
 } */
 
 .person .profile_picture {
-  margin: 20px;
+    margin: 20px;
 }
 
 .person .social_links {
-  text-align: center;
+    text-align: center;
 }
 
 .person .social_links a {
-  margin: 5px 10px;
+    margin: 5px 10px;
 }
 
 .person .profile_picture img {
-  width: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 
 .person .social_links img {
-  width: 30px;
+    width: 30px;
 }
 
 .person .description {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .person .description h5 {
-  color: grey;
+    color: grey;
 
-  margin: 5px 0 20px 0;
+    margin: 5px 0 20px 0;
 }
-
 
 @media screen and (max-width: 800px) {
-.person-container {
- flex-direction: column; 
-}
-
+    .person-container {
+        flex-direction: column;
+    }
 }

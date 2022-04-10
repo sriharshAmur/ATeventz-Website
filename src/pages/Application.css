@@ -1,78 +1,81 @@
 #application {
-  padding-top: 4vh;
-  margin-bottom: 10vh;
+    padding-top: 4vh;
+    margin-bottom: 10vh;
 }
 
 #application h1 {
-  text-align: center;
-  padding-bottom: 5vh;
-  /* margin-top: 20px; */
+    text-align: center;
+    padding-bottom: 5vh;
+    font-family: 'mont-bold';
+    /* margin-top: 20px; */
 }
 
 .grid-container {
-  display: flex;
-  flex-direction: column;
-  /* padding: 30px; */
-  /* padding: 10vh 0; */
+    display: flex;
+    flex-direction: column;
+    /* padding: 30px; */
+    /* padding: 10vh 0; */
 }
 
 .features_container {
-  width: 100%;
-  display: flex;
-  gap: 5vw;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  place-self: center;
-  justify-self: center;
-  /* flex-wrap: wrap; */
+    width: 100%;
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    place-self: center;
+    justify-self: center;
+    /* flex-wrap: wrap; */
 }
 
 .feature {
-  /* margin-bottom: 50px; */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  /* border: 1px solid black; */
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 30px 20px;
-  border-radius: 30px;
-  text-align: center;
-  /* background-color: aliceblue; */
+    /* margin-bottom: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 20px;
+    border-radius: 30px;
+    text-align: center;
+    /* background-color: aliceblue; */
 }
 
 .feature .text {
-  /* background-color: gold; */
-  margin: auto;
-  /* width: 70%; */
+    /* background-color: gold; */
+    margin: auto;
+    /* width: 70%; */
 }
 
 .feature .text h3 {
-  margin: 10px auto;
-  text-align: center;
-  /* background-color: aliceblue; */
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'mont-semibold';
+    /* background-color: aliceblue; */
 }
 
 .feature p {
-  text-align: center;
-  /* background-color: aliceblue;*/
+    text-align: center;
+    font-family: 'mont-regular';
+    /* background-color: aliceblue;*/
 }
 
 .feature .image {
-  /* flex: 1; */
-  text-align: center;
-  /* width: 100%; */
-  /* background-color: gold; */
+    /* flex: 1; */
+    text-align: center;
+    /* width: 100%; */
+    /* background-color: gold; */
 }
 
 .feature img {
-  width: 15vh;
-  margin-bottom: 20px;
+    width: 15vh;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 800px) {
-  .features_container {
-    flex-direction: column;
-  }
+    .features_container {
+        flex-direction: column;
+    }
 }
